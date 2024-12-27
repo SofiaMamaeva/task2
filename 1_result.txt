@@ -1,0 +1,24 @@
+Wed Dec 25 05:19:07 PM MSK 2024: Выполняется тест gcc_compile...
+Компиляция выполнилась с ошибками
+Команда запуска компилятора:
+gcc -std=c99 -Werror=pointer-arith -Werror=implicit-function-declaration -Werror=int-conversion -g -o output.bin 2024-ads/m2-exam.c -lm
+Ошибки компиляции:
+2024-ads/m2-exam.c:78:5: error: redefinition of ‘cmp’
+   78 | int cmp(char *x, char *y){
+      |     ^~~
+2024-ads/m2-exam.c:5:5: note: previous definition of ‘cmp’ with type ‘int(char *, char *)’
+    5 | int cmp(char *x, char *y){
+      |     ^~~
+2024-ads/m2-exam.c:91:5: error: redefinition of ‘ccmp’
+   91 | int ccmp(const void *a, const void *b) {
+      |     ^~~~
+2024-ads/m2-exam.c:18:5: note: previous definition of ‘ccmp’ with type ‘int(const void *, const void *)’
+   18 | int ccmp(const void *a, const void *b) {
+      |     ^~~~
+2024-ads/m2-exam.c:95:5: error: redefinition of ‘main’
+   95 | int main(int argc, char** argv) {
+      |     ^~~~
+2024-ads/m2-exam.c:22:5: note: previous definition of ‘main’ with type ‘int(int,  char **)’
+   22 | int main(int argc, char** argv) {
+      |     ^~~~
+Wed Dec 25 05:19:07 PM MSK 2024: Автотесты выполнены: 0 успешно, 1 неудачно.
