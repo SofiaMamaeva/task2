@@ -1,0 +1,194 @@
+Sat Dec 28 04:31:20 PM MSK 2024: Выполняется тест gcc_compile...
+Sat Dec 28 04:31:21 PM MSK 2024: Выполняется тест c_safe_apis...
+Sat Dec 28 04:31:21 PM MSK 2024: Выполняется тест gen_and_run:kmpbmall:k.lect,b.lect,aa10/10,aa10/100,aa100/10,aa,aa...
+Sat Dec 28 04:31:26 PM MSK 2024: Тест "gen_and_run" не прошёл:
+Sat Dec 28 04:31:21 PM MSK 2024:   Компиляция...
+Sat Dec 28 04:31:21 PM MSK 2024:   Генерация тестов для 2024-ads/m2-exam.c в режиме k.lect...
+Sat Dec 28 04:31:21 PM MSK 2024:   Запуск теста...
+Sat Dec 28 04:31:22 PM MSK 2024:   Успешно!
+Sat Dec 28 04:31:22 PM MSK 2024:   Генерация тестов для 2024-ads/m2-exam.c в режиме b.lect...
+Sat Dec 28 04:31:22 PM MSK 2024:   Запуск теста...
+Sat Dec 28 04:31:23 PM MSK 2024:   Успешно!
+Sat Dec 28 04:31:23 PM MSK 2024:   Генерация тестов для 2024-ads/m2-exam.c в режиме aa10/10...
+Sat Dec 28 04:31:23 PM MSK 2024:   Запуск теста...
+Sat Dec 28 04:31:24 PM MSK 2024:   Успешно!
+Sat Dec 28 04:31:24 PM MSK 2024:   Генерация тестов для 2024-ads/m2-exam.c в режиме aa10/100...
+Sat Dec 28 04:31:24 PM MSK 2024:   Запуск теста...
+Sat Dec 28 04:31:25 PM MSK 2024:   Успешно!
+Sat Dec 28 04:31:25 PM MSK 2024:   Генерация тестов для 2024-ads/m2-exam.c в режиме aa100/10...
+Sat Dec 28 04:31:25 PM MSK 2024:   Запуск теста...
+/home/hwiu9/hw-checker-mail-bot/run-autotest.sh: line 3325: 1823502 Segmentation fault      (core dumped) "$@" < input.txt > output.txt
+/home/hwiu9/hw-checker-mail-bot/run-autotest.sh: line 3345: wait: 1823502: no such job
+Программа завершилась аварийно.
+Командная строка запуска (вложен в письмо) — run.sh
+Вывод вашей программы:
+================================================================================
+================================================================================
+
+Ожидаемый вывод:
+================================================================================
+
+================================================================================
+
+Обнаружены ошибки доступа к памяти.
+Отчёт valgrind:
+================================================================================
+==1823502== Invalid read of size 1
+==1823502==    at 0x1094C2: main (m2-exam.c:53)
+==1823502==  Address 0x1fff001000 is not stack'd, malloc'd or (recently) free'd
+==1823502== 
+==1823502== 
+==1823502== Process terminating with default action of signal 11 (SIGSEGV)
+==1823502==  Access not within mapped region at address 0x1FFF001000
+==1823502==    at 0x1094C2: main (m2-exam.c:53)
+==1823502==  If you believe this happened as a result of a stack
+==1823502==  overflow in your program's main thread (unlikely but
+==1823502==  possible), you can try to increase the size of the
+==1823502==  main thread stack using the --main-stacksize= flag.
+==1823502==  The main thread stack size used in this run was 8388608.
+================================================================================
+
+Sat Dec 28 04:31:26 PM MSK 2024: Выполняется тест gen_and_run:kmpbmall:ab10/10,ab10/100,ab100/10,ab,ab,ab...
+Sat Dec 28 04:31:30 PM MSK 2024: Тест "gen_and_run" не прошёл:
+Sat Dec 28 04:31:26 PM MSK 2024:   Компиляция...
+Sat Dec 28 04:31:27 PM MSK 2024:   Генерация тестов для 2024-ads/m2-exam.c в режиме ab10/10...
+Sat Dec 28 04:31:27 PM MSK 2024:   Запуск теста...
+Sat Dec 28 04:31:28 PM MSK 2024:   Успешно!
+Sat Dec 28 04:31:28 PM MSK 2024:   Генерация тестов для 2024-ads/m2-exam.c в режиме ab10/100...
+Sat Dec 28 04:31:28 PM MSK 2024:   Запуск теста...
+Sat Dec 28 04:31:29 PM MSK 2024:   Успешно!
+Sat Dec 28 04:31:29 PM MSK 2024:   Генерация тестов для 2024-ads/m2-exam.c в режиме ab100/10...
+Sat Dec 28 04:31:29 PM MSK 2024:   Запуск теста...
+/home/hwiu9/hw-checker-mail-bot/run-autotest.sh: line 3325: 1823575 Segmentation fault      (core dumped) "$@" < input.txt > output.txt
+/home/hwiu9/hw-checker-mail-bot/run-autotest.sh: line 3345: wait: 1823575: no such job
+Программа завершилась аварийно.
+Командная строка запуска (вложен в письмо) — run-1.sh
+Вывод вашей программы:
+================================================================================
+================================================================================
+
+Ожидаемый вывод:
+================================================================================
+
+================================================================================
+
+Обнаружены ошибки доступа к памяти.
+Отчёт valgrind:
+================================================================================
+==1823575== Invalid read of size 1
+==1823575==    at 0x1094C2: main (m2-exam.c:53)
+==1823575==  Address 0x1fff001000 is not stack'd, malloc'd or (recently) free'd
+==1823575== 
+==1823575== 
+==1823575== Process terminating with default action of signal 11 (SIGSEGV)
+==1823575==  Access not within mapped region at address 0x1FFF001000
+==1823575==    at 0x1094C2: main (m2-exam.c:53)
+==1823575==  If you believe this happened as a result of a stack
+==1823575==  overflow in your program's main thread (unlikely but
+==1823575==  possible), you can try to increase the size of the
+==1823575==  main thread stack using the --main-stacksize= flag.
+==1823575==  The main thread stack size used in this run was 8388608.
+================================================================================
+
+Sat Dec 28 04:31:30 PM MSK 2024: Выполняется тест gen_and_run:kmpbmall:aba4/10,aba7/7,aba10/4,aba,aba,aba...
+Sat Dec 28 04:31:34 PM MSK 2024: Тест "gen_and_run" не прошёл:
+Sat Dec 28 04:31:30 PM MSK 2024:   Компиляция...
+Sat Dec 28 04:31:30 PM MSK 2024:   Генерация тестов для 2024-ads/m2-exam.c в режиме aba4/10...
+Sat Dec 28 04:31:30 PM MSK 2024:   Запуск теста...
+Sat Dec 28 04:31:31 PM MSK 2024:   Успешно!
+Sat Dec 28 04:31:31 PM MSK 2024:   Генерация тестов для 2024-ads/m2-exam.c в режиме aba7/7...
+Sat Dec 28 04:31:31 PM MSK 2024:   Запуск теста...
+Sat Dec 28 04:31:32 PM MSK 2024:   Успешно!
+Sat Dec 28 04:31:32 PM MSK 2024:   Генерация тестов для 2024-ads/m2-exam.c в режиме aba10/4...
+Sat Dec 28 04:31:32 PM MSK 2024:   Запуск теста...
+/home/hwiu9/hw-checker-mail-bot/run-autotest.sh: line 3325: 1823650 Segmentation fault      (core dumped) "$@" < input.txt > output.txt
+/home/hwiu9/hw-checker-mail-bot/run-autotest.sh: line 3345: wait: 1823650: no such job
+Программа завершилась аварийно.
+Командная строка запуска (вложен в письмо) — run-2.sh
+Вывод вашей программы:
+================================================================================
+================================================================================
+
+Ожидаемый вывод:
+================================================================================
+
+================================================================================
+
+Обнаружены ошибки доступа к памяти.
+Отчёт valgrind:
+================================================================================
+==1823650== Invalid read of size 1
+==1823650==    at 0x1091DE: h (m2-exam.c:9)
+==1823650==    by 0x109441: main (m2-exam.c:46)
+==1823650==  Address 0x1fff001000 is not stack'd, malloc'd or (recently) free'd
+==1823650== 
+==1823650== 
+==1823650== Process terminating with default action of signal 11 (SIGSEGV)
+==1823650==  Access not within mapped region at address 0x1FFF001000
+==1823650==    at 0x1091DE: h (m2-exam.c:9)
+==1823650==    by 0x109441: main (m2-exam.c:46)
+==1823650==  If you believe this happened as a result of a stack
+==1823650==  overflow in your program's main thread (unlikely but
+==1823650==  possible), you can try to increase the size of the
+==1823650==  main thread stack using the --main-stacksize= flag.
+==1823650==  The main thread stack size used in this run was 8388608.
+================================================================================
+
+Sat Dec 28 04:31:34 PM MSK 2024: Выполняется тест gen_and_run:kmpbmall:k.y5/1000,k.y10/1000,k.y10/10,k.n10/1000,k.n5/1000...
+Sat Dec 28 04:31:39 PM MSK 2024: Выполняется тест gen_and_run:kmpbmall:b.y5/1000,b.y10/1000,b.y10/10,b.n10/1000,b.n5/1000...
+Sat Dec 28 04:31:45 PM MSK 2024: Выполняется тест gen_and_run:kmpbmall:k.y,k.n,k.y,k.n,b.y,b.n,b.y,b.n,x,x,x,x,x,x...
+Sat Dec 28 04:31:52 PM MSK 2024: Тест "gen_and_run" не прошёл:
+Sat Dec 28 04:31:45 PM MSK 2024:   Компиляция...
+Sat Dec 28 04:31:45 PM MSK 2024:   Генерация тестов для 2024-ads/m2-exam.c в режиме k.y...
+Sat Dec 28 04:31:45 PM MSK 2024:   Запуск теста...
+Sat Dec 28 04:31:46 PM MSK 2024:   Успешно!
+Sat Dec 28 04:31:46 PM MSK 2024:   Генерация тестов для 2024-ads/m2-exam.c в режиме k.n...
+Sat Dec 28 04:31:46 PM MSK 2024:   Запуск теста...
+Sat Dec 28 04:31:47 PM MSK 2024:   Успешно!
+Sat Dec 28 04:31:47 PM MSK 2024:   Генерация тестов для 2024-ads/m2-exam.c в режиме k.y...
+Sat Dec 28 04:31:47 PM MSK 2024:   Запуск теста...
+Sat Dec 28 04:31:48 PM MSK 2024:   Успешно!
+Sat Dec 28 04:31:48 PM MSK 2024:   Генерация тестов для 2024-ads/m2-exam.c в режиме k.n...
+Sat Dec 28 04:31:48 PM MSK 2024:   Запуск теста...
+Sat Dec 28 04:31:49 PM MSK 2024:   Успешно!
+Sat Dec 28 04:31:49 PM MSK 2024:   Генерация тестов для 2024-ads/m2-exam.c в режиме b.y...
+Sat Dec 28 04:31:49 PM MSK 2024:   Запуск теста...
+Sat Dec 28 04:31:50 PM MSK 2024:   Успешно!
+Sat Dec 28 04:31:50 PM MSK 2024:   Генерация тестов для 2024-ads/m2-exam.c в режиме b.n...
+Sat Dec 28 04:31:51 PM MSK 2024:   Запуск теста...
+/home/hwiu9/hw-checker-mail-bot/run-autotest.sh: line 3325: 1823876 Segmentation fault      (core dumped) "$@" < input.txt > output.txt
+/home/hwiu9/hw-checker-mail-bot/run-autotest.sh: line 3345: wait: 1823876: no such job
+Программа завершилась аварийно.
+Командная строка запуска (вложен в письмо) — run-3.sh
+Вывод вашей программы:
+================================================================================
+================================================================================
+
+Ожидаемый вывод:
+================================================================================
+
+================================================================================
+
+Обнаружены ошибки доступа к памяти.
+Отчёт valgrind:
+================================================================================
+==1823876== Invalid read of size 1
+==1823876==    at 0x1091DE: h (m2-exam.c:9)
+==1823876==    by 0x109441: main (m2-exam.c:46)
+==1823876==  Address 0x1fff001000 is not stack'd, malloc'd or (recently) free'd
+==1823876== 
+==1823876== 
+==1823876== Process terminating with default action of signal 11 (SIGSEGV)
+==1823876==  Access not within mapped region at address 0x1FFF001000
+==1823876==    at 0x1091DE: h (m2-exam.c:9)
+==1823876==    by 0x109441: main (m2-exam.c:46)
+==1823876==  If you believe this happened as a result of a stack
+==1823876==  overflow in your program's main thread (unlikely but
+==1823876==  possible), you can try to increase the size of the
+==1823876==  main thread stack using the --main-stacksize= flag.
+==1823876==  The main thread stack size used in this run was 8388608.
+================================================================================
+
+Sat Dec 28 04:31:52 PM MSK 2024: Выполняется тест gen_and_run:kmpbmall:aab30/60,aab30000/60000...
+Sat Dec 28 04:31:54 PM MSK 2024: Выполняется тест gen_and_run:kmpbmall:aac30/60,aac30000/60000...
+Sat Dec 28 04:31:56 PM MSK 2024: Автотесты выполнены: 6 успешно, 4 неудачно.
