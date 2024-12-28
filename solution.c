@@ -2,27 +2,23 @@
 #include <stdlib.h>
 #include <string.h>
 
-long long h(char *s, int m,
-            long long *qst, long long r){
-    long long sm = 0;
+unsigned long long h(unsigned char *s, unsigned int m,
+                     unsigned long long *qst, unsigned long long r){
+    unsigned long long sm = 0;
     for (int i = 0; i < m; i++){
-        sm += (s[i]*qst[m-i-1])%r;
+        sm += ((unsigned int)s[i] * qst[m-i-1]) % r;
     }
     return sm % r;
 }
 
-long long nexth(long long *qst, long long q, int m,
-                char i, char j, long long h_pred, long long r) {
-    long long new_hash = (h_pred * q) % r;
-    new_hash = (new_hash - (i * qst[m]) % r + j) % r;
-    if (new_hash < 0) {
-        new_hash += r;
-    }
-
+unsigned long long nexth(unsigned long long *qst, unsigned long long q, unsigned int m,
+                unsigned char i, unsigned char j, unsigned long long h_pred, unsigned long long r) {
+    unsigned long long new_hash = (h_pred * q) % r;
+    new_hash = (new_hash - ((unsigned int)i * qst[m]) % r + (unsigned int)j) % r;
     return new_hash;
 }
 
-int eql(char *T, char *S, int start, int end){
+int eql(unsigned char *T, unsigned char *S, int start, int end){
     int i = 0;
     while (start != end){
         if (T[start] != S[i])
@@ -34,20 +30,25 @@ int eql(char *T, char *S, int start, int end){
 }
 
 int main(int argc, char** argv) {
-    char *S = argv[1];
-    char *T = argv[2];
+    unsigned char *S = (unsigned char *)argv[1];
+    unsigned char *T = (unsigned char *)argv[2];
+    if (strlen(T) < strlen(S)){
+        return 0;
+    }
     long long r = 4294967296;
-    long long q = 7;
-    int m = strlen(S);
-    long long *qst = calloc(m + 1, sizeof(long long ));
+    long long q = 3;
+    unsigned int m = strlen(S);
+    unsigned long long *qst = calloc(m + 1, sizeof(unsigned long long));
     qst[0] = 1;
     for (int i = 1; i < m+1; i++){
-        qst[i] = ((qst[i - 1] % r) * (q % r))%r;
+        qst[i] = ((qst[i - 1] % r) * (q % r)) % r;
     }
+
     int k = 0;
-    long long hS = h(S, m, qst, r);
-    long long hT = h(T, m, qst, r);
-    int lT = strlen(T), lS = strlen(S);
+    unsigned long long hS = h(S, m, qst, r);
+    unsigned long long hT = h(T, m, qst, r);
+    unsigned int lT = strlen(T), lS = strlen(S);
+
     while (k < lT - lS + 1){
         if (hS == hT && eql(T, S, k, k + lS)){
             printf("%d ", k);
