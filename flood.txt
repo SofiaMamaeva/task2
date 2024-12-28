@@ -1,1 +1,1 @@
-bello
+сказал, что в хэшировании нужно использовать unsigned int и unsigned char: (unsigned char) s[i]. это поможет избавиться от переполнения
